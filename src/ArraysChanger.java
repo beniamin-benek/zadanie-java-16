@@ -12,4 +12,16 @@ class ArraysChanger {
         return arrayCopy;
     }
 
+    //DRUGI SPOSÓB
+    void printNewArray(int[] array) {
+        int length = array.length;
+        for (int i = 0; i < 2 * length; i++) {
+            if (i <= length - 1)
+                System.out.print(array[i] + " ");
+            else
+                System.out.print(array[2* length - i - 1] + " ");
+        }
+        System.out.println();
+    }
+
 }
